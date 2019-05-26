@@ -6,7 +6,14 @@ func printfSlice(s []int)  {
 func main() {
 	var s []int
 	printfSlice(s)
+	fmt.Println(&s)
 	
 	s=append(s,0)
 	printfSlice(s)
+	fmt.Println(&s)
+
+	s=append(s,2,3,4)
+	printfSlice(s)
+	fmt.Printf("%v",&s)
+
 }
